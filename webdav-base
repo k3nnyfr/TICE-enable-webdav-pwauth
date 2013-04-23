@@ -1,0 +1,16 @@
+<Directory /var/www/webdav/>
+	Options FollowSymLinks Indexes MultiViews
+	AllowOverride None
+	Order allow,deny
+	allow from all
+	DAV On
+     
+	DavDepthInfinity On
+	SetEnv redirect-carefully 1
+	
+        AuthType Basic
+        AuthBasicProvider external
+        AuthExternal pwauth
+        AuthName "Restricted area"
+        Require user root
+</Directory>
