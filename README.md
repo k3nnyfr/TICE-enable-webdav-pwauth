@@ -7,6 +7,7 @@ Script to enable WebDAV for users on a Scribe server (French Educational server)
 
 Pre-requisites
 ------------
+- pwauth package (in Ubuntu/Debian repo)
 - Install.sh script launched
 - a2enmod dav
 - a2enmod dav_fs
